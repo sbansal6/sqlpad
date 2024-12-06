@@ -5,7 +5,7 @@ import ConnectionList from './ConnectionList';
 function ConnectionListDrawer({ visible, onClose }: any) {
   return (
     <Drawer
-      title="Connections"
+      title="Create New View"
       visible={visible}
       width={600}
       onClose={onClose}

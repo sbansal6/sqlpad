@@ -28,21 +28,38 @@ function AppHeaderAdminSection() {
   return (
     <>
       <AppHeaderDivider />
-      <Button variant="ghost" onClick={() => setShowConnections(true)}>
+      {/* <Button variant="ghost" onClick={() => setShowConnections(true)}>
         Connections
       </Button>
       <ConnectionListDrawer
         visible={showConnections}
         onClose={() => setShowConnections(false)}
+      /> */}
+
+      <Button variant="ghost" onClick={() => setShowConnections(true)}>
+        Create Views
+      </Button>
+      <ConnectionListDrawer
+        visible={showConnections}
+        onClose={() => setShowConnections(false)}
       />
-      <Button variant="ghost" onClick={() => setShowConnectionAccesses(true)}>
+
+      <Button variant="ghost" onClick={() => setShowConnections(true)}>
+        Jobs
+      </Button>
+      <ConnectionListDrawer
+        visible={showConnections}
+        onClose={() => setShowConnections(false)}
+      />
+
+      {/* <Button variant="ghost" onClick={() => setShowConnectionAccesses(true)}>
         Access
       </Button>
       <ConnectionAccessListDrawer
         visible={showConnectionAccesses}
         onClose={() => setShowConnectionAccesses(false)}
-      />
-      <Button
+      /> */}
+      {/* <Button
         variant="ghost"
         onClick={() => setShowUsers(true)}
         hidden={hideUsersButton}
@@ -57,8 +74,8 @@ function AppHeaderAdminSection() {
         placement="left"
       >
         <UserList />
-      </Drawer>
-      <Button
+      </Drawer> */}
+      {/* <Button
         variant="ghost"
         onClick={() => setShowServiceTokens(true)}
         hidden={!showServiceTokensButton}
@@ -68,7 +85,7 @@ function AppHeaderAdminSection() {
       <ServiceTokenListDrawer
         visible={showServiceTokens}
         onClose={() => setShowServiceTokens(false)}
-      />
+      /> */}
     </>
   );
 }

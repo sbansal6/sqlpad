@@ -21,9 +21,10 @@ function Appheader() {
     >
       <div style={{ display: 'flex' }}>
         <Logo />
-        <QueryListButton />
         <ToolbarNewQueryButton />
-        <HistoryButton />
+        <QueryListButton />
+        
+        {/* <HistoryButton /> */}
         <AppHeaderAdminSection />
         <AppHeaderSpacer grow />
         <AppHeaderUser />

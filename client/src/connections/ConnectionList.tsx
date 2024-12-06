@@ -99,26 +99,42 @@ function ConnectionList() {
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
       <div
         style={{
-          display: 'flex',
-          justifyContent: 'flex-end',
+          // display: 'flex',
+          // justifyContent: 'flex-end',
+          // padding: 15,
+          // marginLeft: 10
         }}
       >
         <Button
-          style={{ width: 135 }}
+          style={{ width: 135 , marginLeft: 10}}
           variant="primary"
           onClick={newConnection}
         >
-          Add connection
+          Simple View
+        </Button>
+        <Button
+          style={{ width: 135, marginLeft: 10 }}
+          variant="primary"
+          onClick={newConnection}
+        >
+          Full Refresh View
+        </Button>
+        <Button
+          style={{ width: 135, marginLeft: 10 }}
+          variant="primary"
+          onClick={newConnection}
+        >
+          Incremental View
         </Button>
       </div>
       <div style={{ flexGrow: 1 }}>{listItems}</div>
-      <ConnectionEditDrawer
+      {/* <ConnectionEditDrawer
         connectionId={connectionId}
         visible={showEdit}
         onClose={handleEditDrawerClose}
         onConnectionSaved={handleConnectionSaved}
         placement="left"
-      />
+      /> */}
     </div>
   );
 }

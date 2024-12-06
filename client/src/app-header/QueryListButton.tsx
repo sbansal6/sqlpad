@@ -8,7 +8,7 @@ function QueryListButton() {
   return (
     <>
       <Button variant="ghost" onClick={() => setShowQueries(true)}>
-        Queries
+        All Queries
       </Button>
       <QueryListDrawer
         visible={showQueries}
